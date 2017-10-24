@@ -1,15 +1,27 @@
 import React, {Component} from 'react';
-import {Text, View} from 'react-native';
+import {Text, View, Button} from 'react-native';
 
 import styles from './styles';
+import CardElement from "./card-element";
 
 export default class Card extends Component {
 
     render() {
         return (
             <View style={styles.content}>
-                <Text> Card content </Text>
+                <CardElement />
+                <CardElement />
+                <Button
+                    onPress={this.onPressLearnMore}
+                    title="Buy now"
+                    color="#841584"
+                    accessibilityLabel="Buy album now"
+                />
             </View>
         );
+    }
+
+    onPressLearnMore() {
+        console.log('Button pressed');
     }
 };
