@@ -1,17 +1,14 @@
 import { StyleSheet } from 'react-native';
 
 const style = StyleSheet.create({
-    headerBar: {
-        backgroundColor: '#3574b2',
+    content: {
+        flex: 1,
+        backgroundColor: '#C8C8C8',
         alignItems: 'center',
         justifyContent: 'center',
-        height: 40,
     },
     fontSize: {
         fontSize: 24
-    },
-    white: {
-        color: '#FFFFFF',
     }
 });
 
