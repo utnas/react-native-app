@@ -8,8 +8,8 @@ export default class Header extends Component {
 
     render() {
         return (
-            <View styles={styles.container}>
-            <Text> Hello Header</Text>
+            <View styles={styles.header}>
+            <Text> Hello Header </Text>
             </View>
         );
     }
